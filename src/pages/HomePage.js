@@ -5,7 +5,7 @@ import BestSellers from '../components/Home/BestSellers';
 import Header from '../components/Header/Header';
 import NavigationBar from '../components/NavigationBar/NavigationBar'
 import Button from '../components/Button/Button'
-import heroImage from '../components/assets/hero-image.jpg';
+import heroImage from '../components/assets/hero-image-copy.jpg';
 import vectorImage from '../components/assets/Vector 1.png'
 import './HomePage.css'
 import magtop1 from '../components/assets/Frame 80.svg';
@@ -20,13 +20,9 @@ function HomePage() {
   return (
 
     <div >  
-       <div className="header-main" >
-      <Header/>
-       </div>
       <div className="header-image-container">  
       <div className="text-overlay"></div>
        <img src={heroImage} alt="Cyclist" className="cyclist-image" />
-       <img src={vectorImage} alt="Vector Overlay" className="vector-image" /> 
       <div className="text-overlay">
         <h1>Твоя перемога ближче, ніж здається!</h1>
         <p>Знижка до 70% на весь асортимент спортивних товарів!</p>
@@ -35,6 +31,20 @@ function HomePage() {
       <a href="#"><img src={magtop2} alt="magtop" className="magtop2" /> </a>      
       <a href="#"><img src={magtop3} alt="magtop" className="magtop3" /></a>
     </div>
+
+
+    
+     {/* <div className="banner">
+       <img src={heroImage} alt="Cyclist" className="cyclist-image" />
+       <img src={vectorImage} alt="Vector Overlay" className="vector-image" /> 
+      <h1>Твоя перемога ближче, ніж здається!</h1>
+      <p>Знижка до 70% на весь асортимент спортивних товарів!</p>
+    </div>
+    <div className="product-list">
+      <div className="product">Продукт 1</div>
+      <div className="product">Продукт 2</div>
+      <div className="product">Продукт 3</div>
+    </div> */}
 
     <div className="middle-section">
       <h2>РУХАЙСЯ</h2>
@@ -67,27 +77,9 @@ function HomePage() {
         ))}
       </div>
     </div>
-
-
    </div>
   );
 }
 
 export default HomePage;
 
-
-// function HomePage() {
-//   return (
-      
-//       <div className="header-image-container">  
-//        <div className="header-content">
-//           <Header />
-//         </div>
-//       <HeroSection />
-//       <ProductCategories />
-//       <BestSellers />
-//     </div>
-//   );
-// }
-
-// export default HomePage;

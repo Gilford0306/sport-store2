@@ -13,6 +13,7 @@ import ErrorPage from './pages/ErrorPage';
 import { CartProvider } from './contexts/CartContext';
 import './styles/global.css';
 
+
 function App() {
   return (
     <Router>
