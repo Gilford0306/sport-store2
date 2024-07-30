@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './Header.css'; 
 import logo from '../assets/Logo-05.svg';
-
+import { Link } from 'react-router-dom';
+import NavigationBar from "../NavigationBar/NavigationBar";
+import Button from '../Button/Button';
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -10,12 +12,7 @@ const Header = () => {
       <div className="logo">
          <img src={logo} alt="Planet Sports Logo"/>
       </div>
-      <nav className="navigation">
-        <NavLink label="Новинки" />
-        <NavLink label="Чоловіки" />
-        <NavLink label="Жінки" />
-        <NavLink label="Діти" />
-      </nav>
+        <NavigationBar />
       <div className="header-right">
         {isLoggedIn ? (
           <>
@@ -27,8 +24,8 @@ const Header = () => {
           </>
         ) : (
           <>
-            <button className="login-button" onClick={() => setIsLoggedIn(true)}>Войти</button>
-            <button className="register-button">Зарегистрироваться</button>
+        <Button color="yellow" text="Вхід" href="/login" />
+        <Button color="blue" text="Зареєструватися" href="/signup" />
           </>
         )}
       </div>

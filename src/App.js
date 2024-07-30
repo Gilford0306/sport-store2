@@ -10,6 +10,8 @@ import UserProfilePage from './pages/UserProfilePage';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import ErrorPage from './pages/ErrorPage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfUses from  './pages/TermsOfUses';
 import { CartProvider } from './contexts/CartContext';
 import './styles/global.css';
 
@@ -28,6 +30,8 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="*" element={<ErrorPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-uses" element={<TermsOfUses />} /> 
         </Routes>
         <Footer />
       </CartProvider>

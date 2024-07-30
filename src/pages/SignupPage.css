@@ -1,34 +1,100 @@
-form {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: 0 auto;
+.registration-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
 }
 
-form label {
-  display: block;
-  margin: 10px 0 5px;
-}
-
-form input {
+.registration-header {
+  text-align: left;
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.registration-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.registration-header p {
+  font-size: 16px;
+  color: #666;
+}
+
+.registration-form {
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 15px;
 }
 
-form button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
+.form-group-inline {
+  flex-direction: row;
+  gap: 20px;
+  /* Промежуток между полями */
 }
 
-form button:hover {
-  background-color: #0056b3;
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="date"],
+.form-group input[type="email"] {
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group-inline input {
+  flex: 1;
+}
+
+.form-group-checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-group-checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Промежуток между чекбоксом и текстом */
+}
+
+
+.password-hint {
+  font-size: 12px;
+  color: red;
+  margin-top: 5px;
+}
+
+.submit-button {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+
+}
+
+.submit-button:hover {
+  transform: scale(1.05);
+}
+
+.submit-button:active {
+  transform: scale(0.95);
 }

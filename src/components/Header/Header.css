@@ -7,14 +7,15 @@
 }
 .header {
 
+  font-family: 'Jura';
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-   background-color: transparent; 
+  padding: 0px 20px;
+  background-color: transparent; 
 }
 .logo {
-  margin-right: 75%; /* Логотип максимально влево */
+  margin-right: 25%; /* Логотип смещение */
 }
 
 .logo img {
@@ -63,7 +64,7 @@
 }
 
 .login-button, .register-button {
-  background-color: yellow;
+  background-color: rgb(38, 0, 255);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
